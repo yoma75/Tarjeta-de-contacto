@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarjeta Jquery</title>
+    <link rel="stylesheet" href="estilos.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+   
+    <script src="https://kit.fontawesome.com/d864796608.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+</head>
+<body>
+
+    <div class="bussiness-card middle">
+        <div class="front">
+            <h2>Fredy Colorado</h2>
+            <h3>Desarrollador Front-end</h3>
+            <div class="contact-info">                
+                <h4><span class="fas fa-mobile-alt"></span> + (57) 320 3852859</h4>       
+                <h4><span class="far fa-envelope"></span> yomacolor42@gmail.com</h4>      
+                <h4><span class="fas fa-map-marker-alt"></span> Bogota, Colombia</h4>           
+            </div>
+        </div>
+        <div class="back">
+            <span>YomaColor</span>
+        </div>
+    </div>      
+       
+    <script>
+        $(".bussiness-card").click(function(){
+            $(".bussiness-card").toggleClass("bussiness-card-active");
+        });
+    </script>
+    
+</body>
+</html>
